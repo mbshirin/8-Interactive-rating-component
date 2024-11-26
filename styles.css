@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+}
+
+.main {
+    background-color: #1A202A;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 21%;
+    margin: 50px auto auto auto;
+    border-radius: 15px;
+}
+
+.main .icon .circle {
+    background-color: #272E39;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.main .icon .circle img {
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+.main h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.main .group {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.main .group button {
+    background-color: #272E39;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .group button:hover {
+    background-color: white;
+    transition: 0.2s;
+}
+
+.main .group .part p {
+    text-align: center;
+}
+
+.main .submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 20px;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #272E39;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main .submit:hover {
+    background-color: white;
+    transition: 0.2s;
+}
+
+.main .group .star.active {
+    background-color: #e65a00;
+}
+
+.main .selected p {
+    color: hsl(25, 97%, 53%);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main .selected {
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 2rem;
+    padding: 0.2rem 0.5rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:767px) {
+    .main {
+        max-width: 100%;
+    }
+
+    .main .group {
+        gap: 10px;
+    }
+}

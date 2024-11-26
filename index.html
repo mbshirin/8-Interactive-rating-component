@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <div class="circle">
+                <img src="./assets/images/icon-star.svg" alt="icon-star">
+            </div>
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!
+        </p>
+        <div class="group">
+            <button  data-value="1" class="star"><p>1</p></button>
+            <button  data-value="2" class="star"><p>2</p></button>
+            <button  data-value="3" class="star"><p>3</p></button>
+            <button  data-value="4" class="star"><p>4</p></button>
+            <button  data-value="5" class="star"><p>5</p></button>
+        </div>
+        <button class="submit">SUBMIT</button>
+    </div>
+    <div class="main thank-you" style="align-items: center;">
+        <div class="icon">
+            <img src="./assets/images/illustration-thank-you.svg" alt="illustration-thank-you">
+        </div>
+        <div class="selected">
+            <p>You selected <span id="rating"></span> out of 5</p>
+        </div>
+        <h1>Thank you!</h1>
+        <p style="text-align: center;">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+        </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
